@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halaman Utama</title>
+</head>
+<body>
+    <h1>Selamat Datang di Halaman Utama</h1>
+    <p>Ini adalah contoh halaman sederhana menggunakan PHP.</p>
+
+    <?php
+        // Menampilkan tanggal dan waktu saat ini
+        date_default_timezone_set('Asia/Jakarta');
+        echo "<p>Waktu saat ini: " . date("Y-m-d H:i:s") . "</p>";
+
+        // Contoh variabel PHP
+        $nama = "Pengunjung";
+        echo "<p>Halo, $nama!</p>";
+
+        // Contoh perulangan sederhana
+        echo "<p>Daftar angka dari 1 sampai 5:</p>";
+        echo "<ul>";
+        for ($i = 1; $i <= 5; $i++) {
+            echo "<li>Angka $i</li>";
+        }
+        echo "</ul>";
+    ?>
+</body>
+</html>
